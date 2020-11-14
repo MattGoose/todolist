@@ -9,20 +9,20 @@ function App() {
   //wraps components in Provider
   //Provider passes down reducer functions and state to children
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
       <div className="App">
         <TodoContextProvider>
-          <Redirect to='/' />
-          <Switch>
-            <Route exact path='/'>
+          {/* <Redirect to='/' /> */}
+          {/* <Switch>
+            <Route exact path='/'> */}
               <Navbar />
               <AddTodo />
               <TodoList />
-            </Route>
-          </Switch>
+            {/* </Route>
+          </Switch> */}
         </TodoContextProvider>
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
   );
 }
 
